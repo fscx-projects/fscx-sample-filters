@@ -137,6 +137,31 @@ Pack to the filter package, using NuGet with following sample nuspec definitions
 
 * Important: Package version must applied "-pre". Because current FSharp.Compiler.Services package (6.0.2) depended pre-released .NET Core assembly (System.Reflection.Metadata.dll, 1.4.1-beta-24227-04).
 
+## Debugging filter:
+
+Built your own filter package, try filter debugging with MSBuild custom debug property flag below (fscx-enabled.fsproj):
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Name>fscx-enabled</Name>
+    <!-- ... -->
+    <RootNamespace>fscx_enabled</RootNamespace>
+    <AssemblyName>fscx_enabled</AssemblyName>
+    
+    <!-- Add debug flag (default is false) -->
+    <FscxDebug>true</FscxDebug>
+  </PropertyGroup>
+  
+  <!-- ... -->
+```
+
+* If "FscxDebug" property is true, then show message box by fscx from MSBuild, and you can attach debugger.
+
+![Message box](https://raw.githubusercontent.com/fscx-projects/fscx-sample-filters/master/Images/fscxdebug.png)
+
 ## Maintainer(s)
 
 - [Kouji Matsui](https://github.com/kekyo) [twitter](https://twitter.com/kekyo2)

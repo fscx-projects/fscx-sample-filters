@@ -135,7 +135,7 @@ Pack to the filter package, using NuGet with following sample nuspec definitions
 </package>
 ```
 
-* Important: Package version must applied "-pre". Because current FSharp.Compiler.Services package depended pre-released .NET Core assembly (System.Reflection.Metadata.dll).
+* Important: Package version must applied "-pre". Because current FSharp.Compiler.Services package (6.0.2) depended pre-released .NET Core assembly (System.Reflection.Metadata.dll, 1.4.1-beta-24227-04).
 
 ## Maintainer(s)
 

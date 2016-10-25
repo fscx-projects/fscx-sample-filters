@@ -63,8 +63,16 @@
       <HintPath>..\packages\FSharp.Compiler.Service.6.0.2\lib\net45\FSharp.Compiler.Service.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FSharp.Compiler.Service.Visitors">
+      <HintPath>..\packages\FSharp.Compiler.Service.Visitors.0.6.2\lib\net45\FSharp.Compiler.Service.Visitors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\packages\FSharp.Core.4.0.0.1\lib\net40\FSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Core">
-      <HintPath>..\packages\FSharp.Expandable.Compiler.Core.0.6.2\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
+      <HintPath>..\packages\FSharp.Expandable.Compiler.Core.0.6.4\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />

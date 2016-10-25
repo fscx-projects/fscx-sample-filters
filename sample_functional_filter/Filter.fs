@@ -24,7 +24,7 @@ module Filter
 open System.Reflection
 open Microsoft.FSharp.Compiler
 open Microsoft.FSharp.Compiler.Ast
-open Microsoft.FSharp.Compiler.Ast.Visitor
+open Microsoft.FSharp.Compiler.Ast.Visitors
 open Microsoft.FSharp.Compiler.Range
 open Microsoft.FSharp.Compiler.SourceCodeServices
 

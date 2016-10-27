@@ -55,7 +55,7 @@ let isIdent = function
 ////////////////////////////////////////////////
 
 type InsertLoggingVisitor() =
-  inherit AstInheritableVisitor()
+  inherit FscxInheritableVisitor()
 
   //////////////////////////////////
   // Quote

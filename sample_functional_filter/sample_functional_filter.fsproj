@@ -64,7 +64,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Compiler.Service.Visitors">
-      <HintPath>..\packages\FSharp.Compiler.Service.Visitors.0.6.2\lib\net45\FSharp.Compiler.Service.Visitors.dll</HintPath>
+      <HintPath>..\packages\FSharp.Compiler.Service.Visitors.0.6.3\lib\net45\FSharp.Compiler.Service.Visitors.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Core">
@@ -72,7 +72,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Core">
-      <HintPath>..\packages\FSharp.Expandable.Compiler.Core.0.6.5\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
+      <HintPath>..\packages\FSharp.Expandable.Compiler.Core.0.6.7\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />

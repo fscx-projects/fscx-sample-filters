@@ -202,4 +202,4 @@ let outerVisitor
     None
 
 type InsertLoggingVisitor() =
-  inherit DeclareAstFunctionalVisitor(outerVisitor)
+  inherit DeclareFscxFunctionalVisitor(outerVisitor)

@@ -78,6 +78,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\fscx-enabled\fscx-enabled.fsproj">
       <Name>fscx-enabled</Name>
       <Project>{5f5706d7-d3e0-4200-a754-770e2bd7906e}</Project>

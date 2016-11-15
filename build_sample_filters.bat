@@ -1,5 +1,5 @@
 @echo off
-set nupkg_ver=0.6.7
+set nupkg_ver=0.6.12
 
 del /q *.nupkg
 

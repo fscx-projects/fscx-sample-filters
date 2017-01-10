@@ -33,10 +33,6 @@ This repository contains sample filter source codes.
 * "fscx-enabled-main" is main executable project referencing for "fscx-enabled".
 * "no-fscx-enabled*" are different for not applied filter package.
 
-## Guide for filter background
-
-* TODO: Need more informations...
-
 ### Functional visitor implementation:
 
 * "Functional filter" is using for functional visitor patterns with F#'s AST ([FSharp.Compiler.Services](http://fsharp.github.io/FSharp.Compiler.Service/) untyped AST).
@@ -46,9 +42,8 @@ This repository contains sample filter source codes.
 ```fsharp
 // Functional visitor pattern (Not use custom context):
 let outerVisitor
-   (defaultVisitor: (FSharpCheckFileResults * NoContext * SynExpr -> SynExpr),
-    symbolInformation: FSharpCheckFileResults,
-    context: NoContext,  // (Non custom context type)
+   (defaultVisitor: (FscxVisitorContext<NoContext> * SynExpr -> SynExpr),
+    context: FscxVisitorContext<NoContext>,  // (NoContext: Non custom context type)
     expr: SynExpr) : SynExpr option =
 
   match expr with
@@ -78,7 +73,7 @@ type InsertLoggingVisitor() =
   * This class likely ["System.Linq.Expressions.ExpressionVisitor" class](https://msdn.microsoft.com/en-us/library/system.linq.expressions.expressionvisitor(v=vs.110).aspx).
   
 ```fsharp
-// Inheritable visitor pattern (Not use custom context):
+// Inheritable visitor pattern (Non generic version: Not use custom context):
 // Type name for free.
 type InsertLoggingVisitor() =
   inherit AstInheritableVisitor()
@@ -123,7 +118,7 @@ Pack to the filter package, using NuGet with following sample nuspec definitions
     <tags>fscx</tags>
     <dependencies>
       <!-- Including fscx dependency is highly recommended. -->
-      <dependency id="FSharp.Expandable.Compiler.Build" version="0.6.2" />
+      <dependency id="FSharp.Expandable.Compiler.Build" version="0.7.5" />
     </dependencies>
   </metadata>
   <files>
@@ -161,6 +156,12 @@ Built your own filter package, try filter debugging with MSBuild custom debug pr
 * If "FscxDebug" property is true, then show message box by fscx from MSBuild, and you can attach debugger.
 
 ![Message box](https://raw.githubusercontent.com/fscx-projects/fscx-sample-filters/master/Images/fscxdebug.png)
+
+### Resources
+
+* Blog post: [About Expandable F# Compiler project - F# Advent Calendar in English 2016](http://www.kekyo.net/2016/12/23/6305)
+  * This post is 23th ["F# Advent Calendar in English 2016"](https://sergeytihon.wordpress.com/2016/10/23/f-advent-calendar-in-english-2016/)
+  * [(In japanese)](http://www.kekyo.net/2016/12/23/6263)
 
 ## Maintainer(s)
 

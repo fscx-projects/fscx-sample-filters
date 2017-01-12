@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fscx-enabled", "fscx-enabled\fscx-enabled.fsproj", "{5F5706D7-D3E0-4200-A754-770E2BD7906E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fscx-enabled", "filter_usages\fscx-enabled\fscx-enabled.fsproj", "{5F5706D7-D3E0-4200-A754-770E2BD7906E}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fscx-enabled-main", "fscx-enabled-main\fscx-enabled-main.fsproj", "{F12CE420-D232-4DD2-80F2-82D6152B4292}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fscx-enabled-main", "filter_usages\fscx-enabled-main\fscx-enabled-main.fsproj", "{F12CE420-D232-4DD2-80F2-82D6152B4292}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "no-fscx-enabled", "no-fscx-enabled\no-fscx-enabled.fsproj", "{038E8B8C-6917-493F-B2FB-D6D2C6D8A822}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "no-fscx-enabled", "filter_usages\no-fscx-enabled\no-fscx-enabled.fsproj", "{038E8B8C-6917-493F-B2FB-D6D2C6D8A822}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "no-fscx-enabled-main", "no-fscx-enabled-main\no-fscx-enabled-main.fsproj", "{E18036B4-56AE-49C1-9F97-3E1966CB46BA}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "no-fscx-enabled-main", "filter_usages\no-fscx-enabled-main\no-fscx-enabled-main.fsproj", "{E18036B4-56AE-49C1-9F97-3E1966CB46BA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9EC5766-13A7-4DE5-9DCC-E259E36B9D28}"
 	ProjectSection(SolutionItems) = preProject

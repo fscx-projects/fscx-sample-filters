@@ -10,3 +10,7 @@ cd ..
 cd sample_inheritable_filter
 call nupack.bat %nupkg_ver%
 cd ..
+
+cd sample_aspect_filter
+call nupack.bat %nupkg_ver%
+cd ..

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>fscx-sample-aspect-filter</id>
-    <version>$Version$-pre</version>
+    <version>$Version$</version>
     <title>fscx-sample-aspect-filter</title>
     <authors>Kouji Matsui</authors>
     <owners>Kouji Matsui</owners>
@@ -15,8 +15,6 @@
     <releaseNotes>Expandable F# compiler's sample custom filter package.</releaseNotes>
     <tags>fscx</tags>
     <dependencies>
-      <!-- avoid beta package for System.Reflection.Metadata -->
-      <dependency id="System.Reflection.Metadata" version="1.4.1" />
       <dependency id="FSharp.Expandable.Compiler.Build" version="$Version$" />
       <dependency id="FSharp.Expandable.Compiler.Aspect" version="$Version$" />
     </dependencies>

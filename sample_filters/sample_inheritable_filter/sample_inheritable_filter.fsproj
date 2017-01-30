@@ -69,7 +69,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Compiler.Service.Visitors">
-      <HintPath>..\..\packages\FSharp.Compiler.Service.Visitors.0.7.1\lib\net45\FSharp.Compiler.Service.Visitors.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Compiler.Service.Visitors.0.7.3\lib\net45\FSharp.Compiler.Service.Visitors.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Core">
@@ -77,19 +77,19 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Core">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.7.5\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.7.6\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable">
-      <HintPath>..\..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <HintPath>..\..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Reflection.Metadata">
-      <HintPath>..\..\packages\System.Reflection.Metadata.1.4.1\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+      <HintPath>..\..\packages\System.Reflection.Metadata.1.4.2\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

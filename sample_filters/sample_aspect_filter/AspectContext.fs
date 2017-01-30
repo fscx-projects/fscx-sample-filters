@@ -24,18 +24,6 @@
 
 /////////////////////////////////////////////////
 
-// Duck-typed attribute for fscx targetting.
-
-namespace FSharp.Expandable.Compiler
-
-open System
-
-[<AttributeUsage(AttributeTargets.Method)>]
-type internal AspectTargetAttribute() = 
-    inherit Attribute()
-
-/////////////////////////////////////////////////
-
 namespace SampleAspects
 
 open System
@@ -65,3 +53,12 @@ type SampleAspect() =
                  String.Join(", ", args |> Seq.map (sprintf "%A")))
         Console.WriteLine("Enter: " + body)
         new SampleAspectContext(body)
+
+//////////////////////////////////////////////////////////
+
+open System
+open FSharp.Expandable
+
+[<Sealed; NoEquality; NoComparison; AutoSerializable(false)>]
+type DeclareSampleAspectFilter() =
+    inherit DeclareFscxInjectAspectVisitor("SampleAspects.SampleAspect")

@@ -9,8 +9,9 @@ This repository contains sample filter source codes.
 
 ## Status
 
-| NuGet (functional) | [![NuGet fscx-sample-functional-filter](https://img.shields.io/nuget/v/fscx-sample-functional-filter.svg?style=flat)](https://www.nuget.org/packages/fscx-sample-functional-filter) |
+| NuGet (aspect) | [![NuGet fscx-sample-aspect-filter](https://img.shields.io/nuget/v/fscx-sample-aspect-filter.svg?style=flat)](https://www.nuget.org/packages/fscx-sample-aspect-filter) |
 |:----|:----:|
+| NuGet (functional) | [![NuGet fscx-sample-functional-filter](https://img.shields.io/nuget/v/fscx-sample-functional-filter.svg?style=flat)](https://www.nuget.org/packages/fscx-sample-functional-filter) |
 | NuGet (inheritable) | [![NuGet fscx-sample-inheritable-filter](https://img.shields.io/nuget/v/fscx-sample-inheritable-filter.svg?style=flat)](https://www.nuget.org/packages/fscx-sample-inheritable-filter) |
 | Issue status | [![Issue Stats](http://issuestats.com/github/fscx-projects/fscx-sample-filters/badge/issue)](http://issuestats.com/github/fscx-projects/fscx-sample-filters) |
 | Pull req | [![PR Stats](http://issuestats.com/github/fscx-projects/fscx-sample-filters/badge/pr)](http://issuestats.com/github/fscx-projects/fscx-sample-filters) |

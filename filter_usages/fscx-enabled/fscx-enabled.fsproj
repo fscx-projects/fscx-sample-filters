@@ -13,12 +13,13 @@
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
-    <FscxDebug>true</FscxDebug>
     <Name>fscx-enabled</Name>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <FscxDebug>true</FscxDebug>
+    <FscxFilterArgument>FSharp.Expandable.Compiler.Aspect=fscx-enabled</FscxFilterArgument>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,9 +76,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Core">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.7.6\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.8.2\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FSharp.Expandable.Compiler.Core" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable">
@@ -91,12 +93,12 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <Import Project="..\..\packages\FSharp.Expandable.Compiler.Build.0.7.6\build\FSharp.Expandable.Compiler.Build.targets" Condition="Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.7.6\build\FSharp.Expandable.Compiler.Build.targets')" />
+  <Import Project="..\..\packages\FSharp.Expandable.Compiler.Build.0.8.2\build\FSharp.Expandable.Compiler.Build.targets" Condition="Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.8.2\build\FSharp.Expandable.Compiler.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.7.6\build\FSharp.Expandable.Compiler.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\FSharp.Expandable.Compiler.Build.0.7.6\build\FSharp.Expandable.Compiler.Build.targets'))" />
+    <Error Condition="!Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.8.2\build\FSharp.Expandable.Compiler.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\FSharp.Expandable.Compiler.Build.0.8.2\build\FSharp.Expandable.Compiler.Build.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

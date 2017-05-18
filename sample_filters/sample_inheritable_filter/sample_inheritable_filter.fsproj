@@ -77,11 +77,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Aspect">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Aspect.0.8.2\lib\net45\FSharp.Expandable.Compiler.Aspect.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Aspect.0.8.3\lib\net45\FSharp.Expandable.Compiler.Aspect.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Core">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.8.2\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.8.3\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />

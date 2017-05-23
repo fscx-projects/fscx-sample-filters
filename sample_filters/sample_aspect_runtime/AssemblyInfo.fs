@@ -19,14 +19,23 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-namespace Sample
+namespace global
 
-type FscxReferencedClass() =
+open System.Reflection
+open System.Runtime.CompilerServices
+open System.Runtime.InteropServices
 
-  [<FSharp.Expandable.Compiler.AspectTarget>]
-  member __.F1 a b c =
-    FscxOutputSample1.f1(a, b, c)
+[<assembly: AssemblyTitle("sample_aspect_runtime")>]
+[<assembly: AssemblyDescription("")>]
+[<assembly: AssemblyConfiguration("")>]
+[<assembly: AssemblyCompany("fscx-project")>]
+[<assembly: AssemblyProduct("fscx")>]
+[<assembly: AssemblyCopyright("Author: Kouji Matsui, bleis-tift")>]
+[<assembly: AssemblyTrademark("")>]
+[<assembly: AssemblyCulture("")>]
 
-  [<FSharp.Expandable.Compiler.AspectTarget>]
-  member __.F2 a b c =
-    FscxOutputSample2.f2(a, b, c)
+[<assembly: ComVisible(false)>]
+
+[<assembly: Guid("1c0b1128-f344-4864-a1d1-28dcd646d35e")>]
+
+do ()

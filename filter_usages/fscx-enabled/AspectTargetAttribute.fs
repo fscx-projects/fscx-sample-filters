@@ -19,14 +19,15 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-namespace Sample
+namespace FSharp.Expandable.Compiler
 
-type FscxReferencedClass() =
+open System
 
-  [<FSharp.Expandable.Compiler.AspectTarget>]
-  member __.F1 a b c =
-    FscxOutputSample1.f1(a, b, c)
-
-  [<FSharp.Expandable.Compiler.AspectTarget>]
-  member __.F2 a b c =
-    FscxOutputSample2.f2(a, b, c)
+/// <summary>
+/// This is an attribute for identicate aspect target.
+/// </summary>
+/// <remarks>This attribute is duck-typed attribute type.
+/// So we can declare on your local code instead this type.</remarks>
+[<AttributeUsage(AttributeTargets.Method)>]
+type AspectTargetAttribute() =
+  inherit Attribute()

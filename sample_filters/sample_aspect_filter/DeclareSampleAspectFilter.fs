@@ -19,14 +19,16 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-namespace Sample
+// This declaration reference to SampleAspect class into sample_aspect_runtime assembly.
 
-type FscxReferencedClass() =
+/////////////////////////////////////////////////
 
-  [<FSharp.Expandable.Compiler.AspectTarget>]
-  member __.F1 a b c =
-    FscxOutputSample1.f1(a, b, c)
+namespace sample_aspect_filter
 
-  [<FSharp.Expandable.Compiler.AspectTarget>]
-  member __.F2 a b c =
-    FscxOutputSample2.f2(a, b, c)
+open System
+open FSharp.Expandable
+open sample_aspect_runtime
+
+[<Sealed; NoEquality; NoComparison; AutoSerializable(false)>]
+type DeclareSampleAspectFilter() =
+    inherit DeclareFscxInjectAspectVisitor<SampleAspect>()

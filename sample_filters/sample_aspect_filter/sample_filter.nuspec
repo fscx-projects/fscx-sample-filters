@@ -23,5 +23,7 @@
     <!-- CAUTION: Filter assembly MUST place into "build" folder. -->
     <file src="bin/Debug/sample_aspect_filter.dll" target="build" />
     <file src="bin/Debug/sample_aspect_filter.pdb" target="build" />
+    <file src="bin/Debug/sample_aspect_runtime.dll" target="lib/net45" />
+    <file src="bin/Debug/sample_aspect_runtime.pdb" target="lib/net45" />
   </files>
 </package>

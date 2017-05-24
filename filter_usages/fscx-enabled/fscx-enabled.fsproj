@@ -77,14 +77,14 @@
       <HintPath>..\..\packages\FSharp.Core.4.1.17\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Aspect">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Aspect.0.9.1\lib\net45\FSharp.Expandable.Compiler.Aspect.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Aspect.0.9.2\lib\net45\FSharp.Expandable.Compiler.Aspect.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Core">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.9.1\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.9.2\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="sample_aspect_runtime">
-      <HintPath>..\..\packages\fscx-sample-aspect-filter.0.9.1\lib\net45\sample_aspect_runtime.dll</HintPath>
+      <HintPath>..\..\packages\fscx-sample-aspect-filter.0.9.2\lib\net45\sample_aspect_runtime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable">
@@ -101,12 +101,12 @@
       <HintPath>..\..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <Import Project="..\..\packages\FSharp.Expandable.Compiler.Build.0.9.1\build\FSharp.Expandable.Compiler.Build.targets" Condition="Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.9.1\build\FSharp.Expandable.Compiler.Build.targets')" />
+  <Import Project="..\..\packages\FSharp.Expandable.Compiler.Build.0.9.2\build\FSharp.Expandable.Compiler.Build.targets" Condition="Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.9.2\build\FSharp.Expandable.Compiler.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.9.1\build\FSharp.Expandable.Compiler.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\FSharp.Expandable.Compiler.Build.0.9.1\build\FSharp.Expandable.Compiler.Build.targets'))" />
+    <Error Condition="!Exists('..\..\packages\FSharp.Expandable.Compiler.Build.0.9.2\build\FSharp.Expandable.Compiler.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\FSharp.Expandable.Compiler.Build.0.9.2\build\FSharp.Expandable.Compiler.Build.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -77,10 +77,10 @@
       <HintPath>..\..\packages\FSharp.Core.4.1.17\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Aspect">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Aspect.0.9.1\lib\net45\FSharp.Expandable.Compiler.Aspect.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Aspect.0.9.2\lib\net45\FSharp.Expandable.Compiler.Aspect.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.Expandable.Compiler.Core">
-      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.9.1\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
+      <HintPath>..\..\packages\FSharp.Expandable.Compiler.Core.0.9.2\lib\net45\FSharp.Expandable.Compiler.Core.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
